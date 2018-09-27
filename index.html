@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Student Aid Report</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <!----- HEADER START--->
+    <header id="header">
+        <div class="content">
+            <div id="logo"><a href=""> Student Aid Report </a></div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#slide1" class="active" title="Next Section">Financial Summary</a></li>
+                    <li><a href="#slide2" title="Next Section">Student</a></li>
+                    <li><a href="#slide3" title="Next Section">Family</a></li>
+                    <li><a href="#slide4" title="Next Section">Schools</a></li>
+                    <li><a href="#slide5" title="Next Section">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!----- SLIDES START --->
+    <div id="slide1">
+        <div class="content">
+            <h2>Financial Report</h2>
+            <h1>2016-2017</h1>
+            <div id="divider"> </div>
+            <h3>Susan Demodefault</h3>
+            <div class="tooltip">Estimated Family Contribution: $1892.00
+                <span class="tooltiptext">This is the amount your family is expected to contribute to your college expenses</span>
+            </div> <br>
+            <div class="tooltip">Pell Grant: $3925.00
+                <span class="tooltiptext">This is the amount of money that you are qualified to recieve in federal Pell Grant money. This money does not have to be repaid</span>
+            </div>
+            <h3><span id='datecompleted'>Date Completed: 1/1/2016</span></h3>
+        </div>
+    </div>
+    <div id="slide2">
+        <div class="content">
+
+            <h3 class="quotes">Student Information</h3>
+            <button id="accordion">Basic Information</button>
+            <div id="panel">
+                <p><span id="lastname">Demodefault</span> <span id="firstname">Susan</span> <br> <span id="middle">MI</span>                    <br> <span id="address">2345 River Test Road</span> <span id="city">Washington</span> <span id='state'> DC,</span>                    <span id="zip">20111</span> <br> <span id="ssn">XXX-XX-0001</span> <br> <span id="dob">Born 11/02/1978 </span>
+                    <br> <span id="phone">555-301-1212</span> <br><span id='licensenumber'>Driver's License Number</span>,
+                    <span id="driverstate">License State</span><br> <span id='email'>Email Address </span> <br> <span id='citizenship'>US Citizen</span>                    <br> <span id='maritalstatus'>Single</span> <span id="maritalstate"> </span> <br> <span id='residence'>DC</span>                    <span id="before2011"> YES </span> <span id='residencedate'>DATE</span><br> <span id='sex'>Female</span>                    <br><span id='selectiveserv'></span><br> <span id='conviction'>Eligible for Aid</span><br><span id='familymembers'>Number of Family Members: </span>                    <span id='numberincollege'>, this many are in college</span></p>
+            </div>
+
+            <button id="accordion1">Financial Information</button>
+            <div id="panel1">
+                <p><span id='taxform'>IRS 1040A/1040EZ</span><span id='filed'> Filed for 2015</span> <br> <span id='headof'>Status: Head of Household</span>                    <br><span id='formeligibility'>Eligible for 1040A/1040EZ</span><br> <span id='agi'>Adjusted Gross Income: $59,123</span><br>
+                    <span
+                        id='taxpaid'>$7000</span> <br><span id='exemptions'>1</span><br> <span id='savings'>Total
+                    of Cash, Savings, and Checking: $4000</span> <br> <span id='investments'>Net Worth of Current Investments: $3000 </span><br>
+                        <span
+                            id='businesses'> Net Worth of Business/Investment Farms: $999</span> <br> <span id='dependency'>Classified as Dependent</span>                            <br> <span id='edcredits'>Student's education credits: </span><br> <span id='childsupport'>Student's
+                    Child Support Paid: </span><br><span id='taxableearnings'> Taxable Earnings from Need-Based Programs </span><br>                            <span id='grant'>College Grant and Scholarship</span> Aid: <br> Student's Taxable Combat Pay
+                            Reported: <br> Student's Cooperative Education Earnings: <br> Students\'s Payments to Tax-Deferred
+                            Pensions and Retirement Savings: <br> Deductible Payments to IRA:
+                            <br><span id='suppreceived'> Child Support Received: </span><br><span id='interestincome'> Tax Exempt Interest Income: </span><br>
+                            <span
+                                id='iradistribution'> Untaxed Portions of IRA Distributions: </span>
+                                <br> <span id='pensions'>Untaxed Portion of Pensions: </span><br> <span id='living'>Housing, Food, and Living Allowances: </span><br>
+                                <span
+                                    id='vetbenefits'> Veterans Noneducation Benefits: </span><br><span id='other'> Other Untaxed Income: </span><br>
+                                    <span
+                                        id='moneyrec'> Money Received: </span>
+                </p>
+            </div>
+
+            <button id="accordion2">Educational Information</button>
+            <div id="panel2">
+                <p><span id='hsedu'>Education: High School Diploma</span> <br> <span id='highschool'>Received from Buchanan Learning Center</span>,
+                    <span id='hscity'>Washington</span> <span id='hsstate'>DC</span> <br> <span id='firstbach'>NO</span><br>                    <span id='collegeyear'>First-Year
+                    College Student 2016-2017</span> <span id='degreetype'>1st Bachelors</span> <br> <span id='workstudy'>Interested in Work-Study</span></p>
+            </div>
+        </div>
+
+    </div>
+    <div id="slide3">
+        <div class="content">
+            <h3 class="quotes">Family Information</h3>
+            <div class="tabs">
+                <ul class="tab-links">
+                    <li class="active"><a href="#tab1">Parent #1</a></li>
+                    <li><a href="#tab2">Parent #2</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="tab1" class="tab active">
+                        <p>Info for Parent 1</p>
+                        <ul>
+                            <li><span id='parentmarital'>Marital Status</span></li>
+                            <li><span id='parentmaritaldate'>Married on </span></li>
+                            <li><span id='parent1ssn'>XXX-XX-XXXX</span></li>
+                            <li><span id='parent1lastname'>Last name</span><span id='parent1first'>First Initial</span></li>
+                            <li><span id='parent1dob'>Date of birth</span></li>
+                            <li><span id='parentstate'>State of residence</span></li>
+                            <li><span id='parentfamily'>Number of Family members</span></li>
+                            <li><span id='parent1income'>Parent 1 Income</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="tab2" class="tab">
+                        <p>Info for Parent 2</p>
+                        <ul>
+                            <li><span id='parentmarital'>Marital Status</span></li>
+                            <li><span id='parentmaritaldate'>Married on </span></li>
+                            <li><span id='parent2ssn'>XXX-XX-XXXX</span></li>
+                            <li><span id='parent2lastname'>Last name</span><span id='parent2first'>First Initial</span></li>
+                            <li><span id='parent2dob'>Date of birth</span></li>
+                            <li><span id='parentstate'>State of residence</span></li>
+                            <li><span id='parentfamily'>Number of Family members</span></li>
+                            <li><span id='parent2income'>Parent 2 Income</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="slide4">
+            <div class="content">
+
+                <h3 class="quotes">School Information </h3>
+                <div style="overflow-x:auto;">
+                    <table>
+                        <tr>
+                            <th>School Name</th>
+                            <th>Graduation Rate</th>
+                            <th>Retention Rate</th>
+                            <th>Transfer Rate</th>
+                            <th>2015-2016 Cost of Attendance</th>
+                            <th>Housing Plans</th>
+                        </tr>
+                        <tr>
+                            <th><span id='school1name'>Alabama Agricultural and Mechanical University</span></th>
+                            <th><span id='school1grad'>35%</span></th>
+                            <th><span id='school1retention'>66%</span></th>
+                            <th><span id='school1transfer'>N/A</span></th>
+                            <th><span id='school1tuition'>In-State: $17,054</span></th>
+                            <th><span id='school1housing'>On-campus</span></th>
+                        </tr>
+                        <tr>
+                            <th><span id='school2name'>University of Montevallo</span></th>
+                            <th><span id='school2grad'>44%</span></th>
+                            <th><span id='school2retention'>79%</span></th>
+                            <th><span id='school2transfer'>31%</span></th>
+                            <th><span id='school2tuition'>In-state: $24,610</span></th>
+                            <th><span id='school2housing'>On-campus</span></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div id="slide5">
+            <div class="content">
+                <h3 class="quotes">Financial Resources: </h3>
+                <a class="quotes" ; href="https://www.scholarships.com/">Search for Scholarships</a> <br>
+                <a class="quotes" ; href="https://studentaid.ed.gov/sa/">Office of Federal Student Aid</a><br>
+                <a class="quotes" ; href="http://nces.ed.gov/ipeds/netpricecalculator/">Net Price Calculator</a><br>
+                <a class="quotes" ; href="https://www.mint.com/?cid=ppc_gg_b_stan_all_us_mint-default-lp&kw=mint-default-lp&">Mint Budgeting Tool</a><br>
+                <a class="quotes" ; href="https://studentloans.gov/myDirectLoan/mobile/repayment/repaymentEstimator.action">Student Loan Repayment Estimator</a>
+            </div>
+
+
+        </div>
+        <!----- SLIDES END --->
+        <a href="#" class="back-to-top">Back to Top</a>
+
+</body>
+
+</html>
